@@ -222,6 +222,12 @@
     background:var(--brass);color:var(--slate);
     padding:5px 12px;font-size:0.68rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;
   }
+  .card-img .status.sold{background:var(--slate-2);color:var(--paper);border:1px solid rgba(212,171,111,0.5);}
+  .card.is-sold{opacity:0.92;}
+  .card.is-sold .card-img{filter:grayscale(0.15);}
+  .price-tag.was-sold{display:flex;align-items:baseline;gap:8px;}
+  .price-tag.was-sold .old-price{font-size:0.78rem;font-weight:600;color:var(--ink-soft);text-decoration:line-through;}
+  .price-tag.was-sold .sold-price{color:var(--slate);}
   .card-img svg{width:52%;height:52%;opacity:0.5;}
   .card-body{padding:22px 22px 26px;}
   .card-body h3{font-size:1.15rem;font-weight:600;color:var(--slate);margin-bottom:4px;}
@@ -388,17 +394,17 @@
     <div class="listing-note">Sample listings shown for layout demonstration. Replace with Yash's active MLS® listings before launch.</div>
     <div class="listing-grid">
 
-      <div class="card">
+      <div class="card is-sold">
         <div class="card-img">
-          <span class="price-tag">$1,299,000</span>
-          <span class="status">Sample</span>
+          <span class="price-tag was-sold"><span class="old-price">$1,299,000</span><span class="sold-price">$1,250,000</span></span>
+          <span class="status sold">Sold</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="#d4ab6f" stroke-width="1"><path d="M3 11L12 4l9 7M5 10v10h14V10" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <div class="card-body">
           <h3>15022 60 Avenue</h3>
           <div class="loc">Sullivan Station, Surrey, BC</div>
           <div class="card-specs"><span><b>5</b> bed</span><span><b>4</b> bath</span><span><b>2,355</b> sqft</span></div>
-          <div class="card-mls">MLS® R3041225</div>
+          <div class="card-mls">MLS® R3041225 &middot; Sold Sep 2025</div>
         </div>
       </div>
 
