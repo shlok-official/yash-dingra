@@ -147,7 +147,8 @@
     display:grid;grid-template-columns:repeat(3,1fr);
     border-top:1px solid rgba(212,171,111,0.22);
   }
-  .stat{padding:34px 40px 4px 0;position:relative;}
+  .stat{padding:34px 40px 4px 40px;position:relative;}
+  .stat:first-child{padding-left:0;}
   .stat:not(:last-child)::after{
     content:"";position:absolute;top:34px;bottom:4px;right:0;
     width:1px;background:linear-gradient(180deg, rgba(212,171,111,0.35), rgba(212,171,111,0));
@@ -158,7 +159,7 @@
     border:1px solid rgba(212,171,111,0.35);border-radius:50%;
   }
   .stat .stat-ico svg{width:16px;height:16px;stroke:var(--brass-light);}
-  .stat .num{font-family:'Fraunces',serif;font-size:2.1rem;font-weight:500;color:var(--paper);letter-spacing:-0.01em;}
+  .stat .num{font-family:'Fraunces',serif;font-size:2.1rem;font-weight:500;color:var(--paper);letter-spacing:-0.01em;white-space:nowrap;}
   .stat .lbl{font-size:0.76rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(250,248,243,0.5);margin-top:8px;font-weight:600;}
   @media(max-width:900px){
     .stat{padding:28px 0 4px;}
@@ -333,7 +334,7 @@
   <div class="hero-stats">
     <div class="stat">
       <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.2"/></svg></div>
-      <div class="num">2 Provinces</div><div class="lbl">British Columbia &amp; Alberta</div>
+      <div class="num">2</div><div class="lbl">Provinces — BC &amp; Alberta</div>
     </div>
     <div class="stat">
       <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21h18M5 21V9l7-5 7 5v12M10 21v-6h4v6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
